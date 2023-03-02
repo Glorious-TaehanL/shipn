@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+  <mapper namespace="com.shipn.shipn.mappers.user.UserMapper">
+
+	<insert id="register">
+		INSERT INTO ADMIN_USER_TB (
+			id
+			, password
+			, username
+			, email
+			, ENABLED
+		) VALUES(
+			#{userId}
+			, #{userPw}
+			, #{userName}
+			, #{userEmail}
+			, 1
+		)		
+	</insert>
+	
+	<select id="getUserById" parameterType="String" resultType="com.shipn.shipn.security.CustomUserDetails">
+		SELECT * FROM ADMIN_USER_TB WHERE id=#{id}
+	</select>
+	
+	<select id="findId" parameterType="String" resultType="int">
+		SELECT count(*) FROM ADMIN_USER_TB where id=#{userId}
+	</select>
+	
+	<select id="findName" parameterType="String" resultType="int">
+		SELECT count(*) FROM ADMIN_USER_TB where username=#{userName}
+	</select>
+	
+	<select id="findEmail" parameterType="String" resultType="int">
+		SELECT count(*) FROM ADMIN_USER_TB where email=#{userEmail}
+	</select>
+	
+	<select id="getByResetPasswordToken" parameterType="String" resultType="UserVO">
+		SELECT * FROM ADMIN_USER_TB where email=#{userToken}
+	</select>
+	
+	<select id="findByEmail" parameterType="String" resultType="int">
+		SELECT count(*) FROM ADMIN_USER_TB where email=#{userEmail}
+	</select>
+	
+	<select id="findUserKeyByUserId" parameterType="String" resultType="int"> <!-- return info_id in Shipment information TB -->	
+		SELECT shipmentInfo.SHIPMENT_INFORMATION_TB_info_id 
+		FROM shipment_information_tb_has_admin_user_tb AS shipmentInfo
+			join admin_user_tb AS admin
+				 on shipmentInfo.SHIPMENT_INFORMATION_TB_info_id = admin.user_index_id 
+				 and admin.id =#{userId};
+	</select>
+	
+	<select id="updateResetPasswordToken" parameterType="userDto">
+		update ADMIN_USER_TB set reset_password_token = #{resetPasswordToken} where email = #{email}
+	</select>
+
+	<update id="updatePwByToken" parameterType="UserDto">
+		update ADMIN_USER_TB set PASSWORD= #{password} where reset_password_token= #{resetPasswordToken}
+	</update>
+	
+		
+  	<resultMap id="userVOResultMap" type="UserVO">
+  		<result property="userId" column="ID" />
+  		<result property="userPw" column="PASSWORD"/>
+  		<result property="userEmail" column="EMAIL"/>
+  		<result property="userName" column="USERNAME"/>
+  		<result property="userToken" column="reset_password_token"/>
+  	</resultMap>
+  	
+  </mapper>

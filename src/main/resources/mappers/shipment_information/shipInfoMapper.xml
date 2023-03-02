@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+  <mapper namespace="com.shipn.shipn.mappers.shipment_information.shipInfoMapper">
+	<select id="findUserKeyByUserId" parameterType="int" resultMap="shipmentInformationMap">
+		SELECT accesskey,company,name,password from SHIPMENT_INFORMATION_TB where info_id= #{shipmentInfoId}
+	</select>
+	
+	 <resultMap id="shipmentInformationMap" type="map">
+	 	<result property="shipmentAccessKey" column="accesskey"/>
+  		<result property="shipmentCompany" column="company" />
+  		<result property="shipmentUserName" column="name"/>
+  		<result property="shipmentUserPassword" column="password"/>
+  	</resultMap>
+	
+  </mapper>

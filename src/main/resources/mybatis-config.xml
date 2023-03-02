@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration 
+    PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-config.dtd">
+    <configuration>
+    
+        <typeAliases>
+		<!--<typeAlias type="com.shipn.testBoard" alias="memberVO"/> -->
+			<typeAlias type="com.shipn.shipn.dto.ArticleVO" alias="ArticleVO"/>
+			<typeAlias type="com.shipn.shipn.dto.UserVO" alias="UserVO"/>
+			<typeAlias type="com.shipn.shipn.dto.UserDto" alias="UserDto"/>
+			
+        </typeAliases>
+        
+        
+    </configuration>
+

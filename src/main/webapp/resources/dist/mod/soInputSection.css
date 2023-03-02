@@ -1,0 +1,298 @@
+@charset "UTF-8";
+/*
+*
+* Refer to main.jsp file
+*
+*/
+
+/*
+* so-section child 
+*/
+.so-section .title-section {
+	background: #343A40;
+	border: 1px solid #343A40;
+	border-radius: 4px;
+	color: #D6D8D9;
+}
+.so-section .content-section{
+	padding: 15px 25px;
+}
+.so-section .content-section .content-title{
+	min-width: 130px;
+	width: 20%;
+    float: left;
+    margin: 0px;
+    line-height: 34px;
+}
+/* so-section -> title-section */
+.so-section .title-section h4 {
+	margin: 0;
+	padding: 5px;
+	text-indent: 5px;
+}
+
+
+/*
+* so-section -> content-section 
+*/
+/** so-section -> content-section ->pickticket-search-form child **/
+.so-section .content-section .pickticket-search-form {
+	width: 60%;
+	margin-bottom: 10px;
+}
+.so-section .content-section .pickticket-search-form .ptSearch{
+	width: 45%;
+    float: left;
+    border-radius: 4px 0px 0px 4px;
+}
+.so-section .content-section .pickticket-search-form .searchbtn{
+	padding: 4px 10px;
+    background: gray;
+    border-color: gray;
+    border-radius: 0px 4px 4px 0px;
+}
+
+.so-section .content-section .pickticket-search-form .validbtn{
+	padding: 4px 10px;
+    background: gray;
+    border-color: gray;
+    border-radius: 4px;
+}
+
+.so-section .content-section .information-table input.form-control {
+	height: 26px;	
+}
+.so-section .content-section .information-table input.form-control.empty {
+	border: 1px solid red;
+}
+
+.so-section .content-section .row .col-address .content-title {
+	float: left;
+	font-size: 14px;
+	line-height: 26px;
+	min-width: unset;
+	width: 100%;
+}
+
+.so-section .content-section .pick-left {
+	width: 75%;
+	float: left;
+}
+
+.so-section .content-section .pick-left .ship-container {
+	width: 100%;
+}
+
+.so-section .content-section .ship-tab .shipto {
+	width: 100px;	
+	float: left;
+	text-align: center;
+	border-right: 1px solid #c5c5c5;
+	border-top: 1px solid #c5c5c5;
+	border-left: 1px solid #c5c5c5;
+}
+
+.so-section .content-section .ship-tab .shipto.active {
+	background: #ffffcc;
+}
+
+.so-section .content-section .ship-tab .shipto .shipto-tab {
+	color: #000000;
+	padding: 0 5px;
+}
+
+.so-section .content-section .ship-tab .shipto .shipto-tab:hover {
+	cursor: pointer;
+	color: #0066CC;
+}
+
+.so-section .content-section .ship-tab .shipfrom {
+	width: 100px;	
+	display: inline-block;
+	text-align: center;
+	border-top: 1px solid #c5c5c5;
+	border-right: 1px solid #c5c5c5;
+}
+.so-section .content-section .ship-tab .shipfrom.active {
+	background: #ffffcc;
+}
+.so-section .content-section .ship-tab .shipfrom .shipfrom-tab {
+	color: #000000;
+	padding: 0 5px;
+}
+
+.so-section .content-section .ship-tab .shipfrom .shipfrom-tab:hover {
+	cursor: pointer;
+	color: #0066CC;
+}
+
+.so-section .content-section .ship-section {
+	display: none;
+	border: 1px solid #c5c5c5;
+	padding-bottom: 7px;
+	border-right: none;
+	border-bottom: none;
+}
+
+.so-section .content-section .ship-section.active {
+	display: block;
+	width: 100%;
+}
+
+.so-section .content-section .ship-section .row {
+	margin-left: 0;
+	margin-right: 0;
+	width: 100%;
+}
+
+.so-section .content-section .ship-section .ship-section-left {
+	width: 50%;
+}
+
+.so-section .content-section .ship-section .ship-section-left .col-address {
+	width: 50%;
+	float: left;
+	padding: 0 10px;
+}
+
+.so-section .content-section .ship-section .ship-section-left .col-address.street {
+	width: 100%;
+}
+
+.so-section .content-section .ship-section .ship-section-right {
+	width: 50%;
+}
+
+.so-section .content-section .ship-section .ship-section-right .col-address {
+	width: 50%;
+	float: left;
+	padding: 0 10px;
+}
+
+.so-section .content-section .ship-section .ship-section-right .col-address.street {
+	width: 100%;
+}
+
+.so-section .content-section .pick-right {
+	width: 25%;
+	float: right;
+	min-height: 600px;
+}
+
+.so-section .content-section .pick-right .info-tab .shipinfo .shipinfo-title{
+	color: #000000;
+	padding: 0 5px;
+	display: inline-block;
+	border-top: 1px solid #c5c5c5;
+	border-right: 1px solid #c5c5c5;
+	border-left: 1px solid #c5c5c5;
+	width: 100px;
+	text-align: center;
+}
+
+.so-section .content-section .pick-right .info-container {
+	border: 1px solid #c5c5c5;
+	min-height: 600px;
+}
+
+.so-section .content-section .pick-right .row{
+	margin-left: 0;
+	margin-right: 0;
+	width: 100%;
+}
+.so-section .content-section .pick-right .row .col-address{
+	margin: 0 auto;
+	width: 90%;
+}
+
+.so-section .content-section .ship-jqgrid-container {
+	width: 75%;
+	float: left;
+	border: 1px solid#c5c5c5;
+	border-right: none;
+}
+
+.so-section .content-section .ship-jqgrid-container .jqgrid-title{
+	padding: 0 5px;
+	border-bottom: 1px solid #c5c5c5;
+}
+
+.so-section .content-section .ship-jqgrid-container .row{
+	margin-left: 0;
+	margin-right: 0;
+	width: 100%;
+}
+
+@media (max-width: 767px) {
+	.content-wrapper.pick {
+		overflow-y: auto;
+	}
+	.so-section .content-section .pickticket-search-form {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	.so-section .content-section .pickticket-search-form .ptSearch {
+		width: 40%;
+		float: left;
+		border-radius: 4px 0px 0px 4px;
+		font-size: 12px;
+	}
+	.so-section .content-section .pickticket-search-form .searchbtn {
+		padding: 4px 10px;
+		background: gray;
+		border-color: gray;
+		border-radius: 0px 4px 4px 0px;
+	}
+	.so-section .content-section .information-table {
+		border: none;
+	}
+	.so-section .content-section .pick-left {
+		width: 100%;
+		display: block;
+	}
+	.so-section .content-section .pick-left .ship-container{
+		border-bottom: none;
+		padding-bottom: 0;
+	}
+	.so-section .content-section .pick-left .ship-container .ship-section{
+		border-right: 1px solid #c5c5c5;
+		border-bottom: 1px solid #c5c5c5;
+	}
+	.so-section .content-section .ship-section .ship-section-left {
+		width: 100%;
+	}
+	.so-section .content-section .ship-section .ship-section-left .col-address
+		{
+		width: 50%;
+		float: left;
+		padding: 0 10px;
+	}
+	.so-section .content-section .ship-section .ship-section-right {
+		width: 100%;
+	}
+	.so-section .content-section .ship-section .ship-section-right .col-address
+		{
+		width: 50%;
+		float: left;
+		padding: 0 10px;
+	}
+	.so-section .content-section .pick-right {
+		width: 100%;
+		display: block;
+		min-height: auto;
+		margin-top: 15px;
+	}
+	.so-section .content-section .pick-right .info-tab .shipinfo .shipinfo-title{
+		border-left: 1px solid #c5c5c5;
+	}
+	.so-section .content-section .pick-right .info-container{
+		min-height: auto;
+		padding-bottom: 7px;
+	}
+	.so-section .content-section .ship-jqgrid-container {
+		width: 100%;
+		float: left;
+		border: 1px solid #c5c5c5;
+		margin-top: 15px;
+	}
+}

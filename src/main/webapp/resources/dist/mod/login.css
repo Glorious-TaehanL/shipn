@@ -1,0 +1,123 @@
+@charset "UTF-8";
+/*login page*/
+.login-box-body .form-group .id,
+.login-box-body .form-group .password {
+	display: block;
+}
+
+.login-box-body .form-group input {
+	width: 100%;
+}
+
+.login-box-body .row {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.login-box-body .row .col-xs-4 {
+	width: 100%;
+}
+
+.login-box-body .row .btn-login {
+	background-color: #000000;
+}
+
+.login-box .confirm-message {
+	text-align: center;
+}
+
+/* registration page*/
+.account-forgot-password {
+	margin-top: 5px;
+	width: 100%;
+	text-align: center;
+	display: block;
+	color: #000000;
+}
+.account-register {
+	width: 100%;
+	text-align: center;
+	display: block;
+	color: #000000;
+}
+.register-box-body .form-group .id,
+.register-box-body .form-group .name,
+.register-box-body .form-group .email,
+.register-box-body .form-group .password,
+.register-box-body .form-group .confirm-password {
+	display: block;
+}
+
+.register-box-body .row {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.register-box-body .row .col-xs-4 {
+	width: 100%;
+}
+
+.register-box-body .row .btn-register {
+	background-color: #000000;
+}
+
+.register-box-body .go-previous-page {
+	margin-top: 5px;
+	width: 100%;
+	text-align: center;
+	display: block;
+	color: #000000;
+}
+
+/*Forgot Password page */
+.forgot-password-page{
+	align-items: center;
+    background: #e9ecef;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 100vh;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.forgot-password-page .border {
+	border: none !important;
+}
+
+.forgot-password-page .btn-forgot{
+	width: 100%;
+	background-color: #000000;
+	border: none;
+}
+
+.forgot-password-page .go-previous-page {
+	margin-top: 5px;
+	width: 100%;
+	text-align: center;
+	display: block;
+	color: #000000;
+}
+
+.reset-password-page{
+	align-items: center;
+    background: #e9ecef;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 100vh !important;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.reset-password-page .border {
+	border: none !important;
+}
+
+.reset-password-page .btn-reset-send{
+	width: 100%;
+	background-color: #000000;
+	border: none;
+}

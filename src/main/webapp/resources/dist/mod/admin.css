@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+.navbar-nav .nav-item .username p {
+	float: left;
+	margin-right: 10px;
+	margin-top: 7px;
+}
+.navbar-nav .nav-item .username .btn-logout {
+	float: left;
+	margin-top: 5px;
+}
+
+.sidebar .nav-sidebar .nav-item.has-treeview i {
+	font-size: 1.1rem;
+	margin-left: .05rem;
+	margin-right: .2rem;
+    text-align: center;
+    width: 1.6rem;
+}
+
+/* API SEARCH */
+.search-page h3 {
+	float: left;
+	margin-right: 10px;	
+}
+.search-page .col-md-4 {
+	float: left;
+}
+.search-page .search {
+	margin-bottom: 0;
+}
+.search-page .search #keyword {
+	float: left;
+	width: 78%;
+	margin-right: 1%;
+}
+.search-page .search .btn-search {
+	float: left;
+	width: 20%;
+	background-color: black;
+	border: none;
+}
